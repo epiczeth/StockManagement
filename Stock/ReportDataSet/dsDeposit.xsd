@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDeposit" targetNamespace="http://tempuri.org/dsDeposit.xsd" xmlns:mstns="http://tempuri.org/dsDeposit.xsd" xmlns="http://tempuri.org/dsDeposit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="stockdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="stockdbConnectionString (MySettings)" PropertyReference="ApplicationSettings.Stock.My.MySettings.GlobalReference.Default.stockdbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDeposit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDeposit" msprop:Generator_UserDSName="dsDeposit">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtDeposit" msprop:Generator_TableClassName="dtDepositDataTable" msprop:Generator_TableVarName="tabledtDeposit" msprop:Generator_RowChangedName="dtDepositRowChanged" msprop:Generator_TablePropName="dtDeposit" msprop:Generator_RowDeletingName="dtDepositRowDeleting" msprop:Generator_RowChangingName="dtDepositRowChanging" msprop:Generator_RowEvHandlerName="dtDepositRowChangeEventHandler" msprop:Generator_RowDeletedName="dtDepositRowDeleted" msprop:Generator_RowClassName="dtDepositRow" msprop:Generator_UserTableName="dtDeposit" msprop:Generator_RowEvArgName="dtDepositRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deid" msprop:Generator_ColumnVarNameInTable="columndeid" msprop:Generator_ColumnPropNameInRow="deid" msprop:Generator_ColumnPropNameInTable="deidColumn" msprop:Generator_UserColumnName="deid" type="xs:int" minOccurs="0" />
+              <xs:element name="spname" msprop:Generator_ColumnVarNameInTable="columnspname" msprop:Generator_ColumnPropNameInRow="spname" msprop:Generator_ColumnPropNameInTable="spnameColumn" msprop:Generator_UserColumnName="spname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="depriceperunit" msprop:Generator_ColumnVarNameInTable="columndepriceperunit" msprop:Generator_ColumnPropNameInRow="depriceperunit" msprop:Generator_ColumnPropNameInTable="depriceperunitColumn" msprop:Generator_UserColumnName="depriceperunit" type="xs:int" minOccurs="0" />
+              <xs:element name="decount" msprop:Generator_ColumnVarNameInTable="columndecount" msprop:Generator_ColumnPropNameInRow="decount" msprop:Generator_ColumnPropNameInTable="decountColumn" msprop:Generator_UserColumnName="decount" type="xs:int" minOccurs="0" />
+              <xs:element name="dedate" msprop:Generator_ColumnVarNameInTable="columndedate" msprop:Generator_ColumnPropNameInRow="dedate" msprop:Generator_ColumnPropNameInTable="dedateColumn" msprop:Generator_UserColumnName="dedate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

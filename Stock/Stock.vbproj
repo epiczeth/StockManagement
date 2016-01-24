@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2422F16E-44AE-4691-8FF4-0E6A929888C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Stock.My.MyApplication</StartupObject>
+    <RootNamespace>Stock</RootNamespace>
+    <AssemblyName>Stock</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Stock.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Stock.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceptwork.Designer.vb">
+      <DependentUpon>acceptwork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="acceptwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSupply.Designer.vb">
+      <DependentUpon>frmAddSupply.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSupply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageRecipient.Designer.vb">
+      <DependentUpon>frmManageRecipient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageRecipient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagestaff.Designer.vb">
+      <DependentUpon>frmManagestaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagestaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSupplies.Designer.vb">
+      <DependentUpon>frmManageSupplies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSupplies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagVendor.Designer.vb">
+      <DependentUpon>frmManagVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintWith.Designer.vb">
+      <DependentUpon>frmPrintWith.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintWith.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportDeposit.Designer.vb">
+      <DependentUpon>frmReportDeposit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportDeposit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportwithdraw.Designer.vb">
+      <DependentUpon>frmReportwithdraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportwithdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsubselect.Designer.vb">
+      <DependentUpon>frmsubselect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsubselect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdraw.Designer.vb">
+      <DependentUpon>frmWithdraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OledbObj.vb" />
+    <Compile Include="ReportDataSet\dsDeposit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDeposit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet\dsWithdraw.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWithdraw.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reports\dsNewWit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNewWit.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acceptwork.resx">
+      <DependentUpon>acceptwork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSupply.resx">
+      <DependentUpon>frmAddSupply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageRecipient.resx">
+      <DependentUpon>frmManageRecipient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagestaff.resx">
+      <DependentUpon>frmManagestaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSupplies.resx">
+      <DependentUpon>frmManageSupplies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagVendor.resx">
+      <DependentUpon>frmManagVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintWith.resx">
+      <DependentUpon>frmPrintWith.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportDeposit.resx">
+      <DependentUpon>frmReportDeposit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportwithdraw.resx">
+      <DependentUpon>frmReportwithdraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsubselect.resx">
+      <DependentUpon>frmsubselect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdraw.resx">
+      <DependentUpon>frmWithdraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\repDeposit.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\repNewWithdraw.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\reportWithdraw.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReportDataSet\dsDeposit.xsc">
+      <DependentUpon>dsDeposit.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet\dsDeposit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDeposit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet\dsDeposit.xss">
+      <DependentUpon>dsDeposit.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet\dsWithdraw.xsc">
+      <DependentUpon>dsWithdraw.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet\dsWithdraw.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWithdraw.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet\dsWithdraw.xss">
+      <DependentUpon>dsWithdraw.xsd</DependentUpon>
+    </None>
+    <None Include="reports\dsNewWit.xsc">
+      <DependentUpon>dsNewWit.xsd</DependentUpon>
+    </None>
+    <None Include="reports\dsNewWit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNewWit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reports\dsNewWit.xss">
+      <DependentUpon>dsNewWit.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+    <None Include="Resources\del.ico" />
+    <None Include="Resources\edit.ico" />
+    <None Include="Resources\save.ico" />
+    <None Include="Resources\exit.ico" />
+    <None Include="Resources\login.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="databases\stockdb.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\accept.ico" />
+    <None Include="Resources\denied.ico" />
+    <None Include="Resources\accept1.ico" />
+    <None Include="Resources\denied1.ico" />
+    <None Include="Resources\print.ico" />
+    <Content Include="stockdb.accdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
